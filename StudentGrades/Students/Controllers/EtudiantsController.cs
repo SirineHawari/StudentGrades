@@ -17,7 +17,8 @@ namespace Students.Controllers
         // GET: Etudiants
         public ActionResult Index()
         {
-            return View(db.Etudiants.ToList());
+            var etudiants = db.Etudiants.Include(e => e.Classe);
+            return View(etudiants.ToList());
         }
 
         // GET: Etudiants/Details/5
@@ -38,6 +39,7 @@ namespace Students.Controllers
         // GET: Etudiants/Create
         public ActionResult Create()
         {
+            ViewBag.ClasseId = new SelectList(db.Classes, "ClasseId", "NomClasse");
             return View();
         }
 
@@ -46,7 +48,7 @@ namespace Students.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "EtudiantId,Name")] Etudiant etudiant)
+        public ActionResult Create([Bind(Include = "EtudiantId,Name,ClasseId")] Etudiant etudiant)
         {
             if (ModelState.IsValid)
             {
@@ -55,6 +57,7 @@ namespace Students.Controllers
                 return RedirectToAction("Index");
             }
 
+            ViewBag.ClasseId = new SelectList(db.Classes, "ClasseId", "NomClasse", etudiant.ClasseId);
             return View(etudiant);
         }
 
@@ -70,6 +73,7 @@ namespace Students.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.ClasseId = new SelectList(db.Classes, "ClasseId", "NomClasse", etudiant.ClasseId);
             return View(etudiant);
         }
 
@@ -78,7 +82,7 @@ namespace Students.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "EtudiantId,Name")] Etudiant etudiant)
+        public ActionResult Edit([Bind(Include = "EtudiantId,Name,ClasseId")] Etudiant etudiant)
         {
             if (ModelState.IsValid)
             {
@@ -86,6 +90,7 @@ namespace Students.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            ViewBag.ClasseId = new SelectList(db.Classes, "ClasseId", "NomClasse", etudiant.ClasseId);
             return View(etudiant);
         }
 

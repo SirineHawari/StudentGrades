@@ -1,3 +1,4 @@
+C:\Users\syrina\Desktop\c#\Students\Students\obj\Debug\Students.csprojResolveAssemblyReference.cache
 C:\Users\syrina\Desktop\c#\Students\Students\bin\Students.dll.config
 C:\Users\syrina\Desktop\c#\Students\Students\bin\Students.dll
 C:\Users\syrina\Desktop\c#\Students\Students\bin\Students.pdb
@@ -52,4 +53,3 @@ C:\Users\syrina\Desktop\c#\Students\Students\bin\Microsoft.Owin.Security.Twitter
 C:\Users\syrina\Desktop\c#\Students\Students\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\syrina\Desktop\c#\Students\Students\obj\Debug\Students.dll
 C:\Users\syrina\Desktop\c#\Students\Students\obj\Debug\Students.pdb
-C:\Users\syrina\Desktop\c#\Students\Students\obj\Debug\Students.csprojResolveAssemblyReference.cache

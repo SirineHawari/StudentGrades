@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Students.Models
+  namespace Students.Models
 {
     public class Matiere
     {

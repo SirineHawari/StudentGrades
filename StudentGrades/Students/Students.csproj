@@ -168,7 +168,6 @@
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Classe.cs" />
-    <Compile Include="Models\ClasseEtudiant.cs" />
     <Compile Include="Models\MydbContext.cs" />
     <Compile Include="Models\Etudiant.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -234,16 +233,16 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Classes\Create.cshtml" />
-    <Content Include="Views\Classes\Delete.cshtml" />
-    <Content Include="Views\Classes\Details.cshtml" />
-    <Content Include="Views\Classes\Edit.cshtml" />
-    <Content Include="Views\Classes\Index.cshtml" />
     <Content Include="Views\Etudiants\Create.cshtml" />
     <Content Include="Views\Etudiants\Delete.cshtml" />
     <Content Include="Views\Etudiants\Details.cshtml" />
     <Content Include="Views\Etudiants\Edit.cshtml" />
     <Content Include="Views\Etudiants\Index.cshtml" />
+    <Content Include="Views\Classes\Create.cshtml" />
+    <Content Include="Views\Classes\Delete.cshtml" />
+    <Content Include="Views\Classes\Details.cshtml" />
+    <Content Include="Views\Classes\Edit.cshtml" />
+    <Content Include="Views\Classes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

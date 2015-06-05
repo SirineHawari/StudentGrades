@@ -9,7 +9,7 @@ namespace Students.Models
     public class MydbContext : DbContext
     {
         public MydbContext()
-            : base("StudentGrades1")
+            : base("StudentsGrade")
         {
 
         }
