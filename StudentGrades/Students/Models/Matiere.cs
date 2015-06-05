@@ -9,6 +9,6 @@ using System.Web;
     {
         public int MatiereId { get; set; }
         public String Nom { get; set; }
-        public decimal Valeur { get; set; }
+       
     }
 }

@@ -9,9 +9,7 @@ namespace Students.Models
     {
         public int NoteId { get; set; }
 
-        public virtual Etudiant Student { get; set; }
-        public virtual Matiere Mat { get; set; }
-        public int Valeur { get; set; }
+        public String Type { get; set; }
 
     }
 }
