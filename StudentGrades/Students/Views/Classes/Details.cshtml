@@ -1,0 +1,26 @@
+﻿@model Students.Models.Classe
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Classe</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomClasse)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomClasse)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ClasseId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
